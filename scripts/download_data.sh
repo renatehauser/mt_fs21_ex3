@@ -29,11 +29,11 @@ mv speeches.txt $data/trump/raw
 
 # preprocess slightly
 
-cat $data/trump/raw/speeches.txt | python $base/scripts/preprocess_raw.py > $data/trump/raw/speeches.cleaned.txt
+cat $data/trump/raw/speeches.txt | python3 $base/scripts/preprocess_raw.py > $data/trump/raw/speeches.cleaned.txt
 
 # tokenize, fix vocabulary upper bound
 
-cat $data/trump/raw/speeches.cleaned.txt | python $base/scripts/preprocess.py --vocab-size 5000 --tokenize --lang "en" > \
+cat $data/trump/raw/speeches.cleaned.txt | python3 $base/scripts/preprocess.py --vocab-size 5000 --tokenize --lang "en" > \
     $data/trump/raw/speeches.preprocessed.txt
 
 # split into train, valid and test
