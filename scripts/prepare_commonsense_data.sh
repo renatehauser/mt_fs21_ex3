@@ -28,6 +28,6 @@ cat $data/commonsense/raw/omcs_commonsense.cleaned.txt | python3 $base/scripts/p
 
 # split into train, valid and test
 
-head -n 1000 $data/commonsense/raw/commonsense.preprocessed.txt > $data/commonsense/valid.txt
-head -n 2000 $data/commonsense/raw/commonsense.preprocessed.txt | tail -n 1000 > $data/commonsense/test.txt
-tail -n 13000 $data/commonsense/raw/commonsense.preprocessed.txt > $data/commonsense/train.txt
+head -n 1000 $data/commonsense/raw/omcs_commonsense.preprocessed.txt > $data/commonsense/valid.txt
+head -n 2000 $data/commonsense/raw/omcs_commonsense.preprocessed.txt | tail -n 1000 > $data/commonsense/test.txt
+tail -n 13000 $data/commonsense/raw/omcs_commonsense.preprocessed.txt > $data/commonsense/train.txt
