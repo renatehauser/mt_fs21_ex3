@@ -8,5 +8,10 @@ data/commonsense/raw/raw_mixed.txt
 data/commonsense/test.txt
 data/commonsense/train.txt
 data/commonsense/valid.txt
+data/commonsense/raw/omcs_commonsense.cleaned.txt
+data/commonsense/raw/omcs_commonsense.preprocessed.txt
+data/commonsense/raw/omcs_commonsense_raw.txt
+data/commonsense/raw/omcs_commonsense_raw_15k.txt
 models
 samples
+log
