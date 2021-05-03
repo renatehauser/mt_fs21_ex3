@@ -1,5 +1,12 @@
 venvs
 tools
-data
+data/trump
+data/wikitext-2
+data/commonsense/old
+data/commonsense/raw/unused
+data/commonsense/raw/raw_mixed.txt
+data/commonsense/test.txt
+data/commonsense/train.txt
+data/commonsense/valid.txt
 models
 samples
