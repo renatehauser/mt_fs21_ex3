@@ -1,4 +1,4 @@
-# Pytorch RNN Language Models
+# MT Exercise 3 - Pytorch RNN Language Models
 
 This repo shows how to train neural language models using [Pytorch example code](https://github.com/pytorch/examples/tree/master/word_language_model).
 
@@ -14,8 +14,8 @@ This repo shows how to train neural language models using [Pytorch example code]
 
 Clone this repository in the desired place:
 
-    git clone https://github.com/lucasseiler/pytorch-rnn-lm
-    cd pytorch-rnn-lm
+    git clone https://github.com/renatehauser/mt_fs21_ex3
+    cd mt_fs21_ex3
 
 Create a new virtualenv that uses Python 3. Please make sure to run this command outside of any virtual Python environment:
 
@@ -49,7 +49,7 @@ Generate (sample) some text from a trained model with:
 
     ./scripts/generate_fact.sh
 
-Generate some more samples when giving some words to start generation with as input:
+Generate some more samples when giving some words to start generation with an input:
 
     ./scripts/generate_fact_with_input.sh
     
@@ -57,11 +57,11 @@ Generate some more samples when giving some words to start generation with as in
 Alternatively, you can also generate some facts directly from the commandline:
 
     python3 tools/examples/word-language-model/generate.py \
-        --data $data/commonsense \
+        --data data/commonsense \
         --words 50 \
-        --checkpoint $models/model_40.pt \
-        --outf $samples/sample_with_input \
-        --input "here goes your input"
+        --checkpoint models/model_40perc.pt \
+        --outf samples/sample_with_input \
+        --input "write something"
       
 Try this, if you want to see what happens, if an input word is not in the vocabulary:
 

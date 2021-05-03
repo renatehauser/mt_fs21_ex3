@@ -20,6 +20,6 @@ git clone https://github.com/bricksdont/moses-scripts $tools/moses-scripts
 
 git clone https://github.com/pytorch/examples $tools/pytorch-examples
 
-# install examples with modified generate.py
+# install pytorch examples with modified generate.py
 
 git clone https://github.com/renatehauser/examples
