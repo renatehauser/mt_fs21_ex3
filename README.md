@@ -27,16 +27,47 @@ Download and install required software:
 
     ./scripts/install_packages.sh
 
-Download and preprocess data:
+Preprocess data:
 
-    ./scripts/download_data.sh
+    ./scripts/prepare_commonsense_data.sh
 
-Train a model:
+Train all the models in one run:
 
-    ./scripts/train.sh
+    ./scripts/train_all_models.sh
+    
+Or train only the best model:
+
+    ./scripts/train_best_model.sh
+    
 
 The training process can be interrupted at any time, and the best checkpoint will always be saved.
 
+# Generating Facts
+This is only possible, if the data has been prepared and a model has been trained before.
+
 Generate (sample) some text from a trained model with:
 
-    ./scripts/generate.sh
+    ./scripts/generate_fact.sh
+
+Generate some more samples when giving some words to start generation with as input:
+
+    ./scripts/generate_fact_with_input.sh
+    
+    
+Alternatively, you can also generate some facts directly from the commandline:
+
+    python3 tools/examples/word-language-model/generate.py \
+        --data $data/commonsense \
+        --words 50 \
+        --checkpoint $models/model_40.pt \
+        --outf $samples/sample_with_input \
+        --input "here goes your input"
+      
+Try this, if you want to see what happens, if an input word is not in the vocabulary:
+
+    ./scripts/generate_fact_oovocab.sh
+    
+  
+Have fun!        
+    
+    
