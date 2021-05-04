@@ -22,4 +22,4 @@ git clone https://github.com/pytorch/examples $tools/pytorch-examples
 
 # install pytorch examples with modified generate.py
 
-git clone https://github.com/renatehauser/examples
+git clone https://github.com/renatehauser/examples $tools/examples
